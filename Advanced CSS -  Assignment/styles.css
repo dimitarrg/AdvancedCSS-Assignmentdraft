@@ -1,0 +1,492 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  background-color: #c3cfe2;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* Testimonial card */
+.container {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 3fr 1fr;
+      grid-template-rows: 3fr 1fr;
+  border-radius: 20px;
+  width: 400px;
+  height: 530px;
+  background-color: white;
+  -webkit-box-shadow: 5px 5px 15px 6px #b3b3b3;
+  box-shadow: 5px 5px 15px 6px #b3b3b3;
+}
+
+.container p {
+  margin: 40px;
+  font-size: 20px;
+  color: #3b3b3b;
+}
+
+.container .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #686de0;
+  text-align: center;
+  letter-spacing: 0.2em;
+  margin-top: 0px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.container .footer img {
+  border: solid white 6px;
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  border-radius: 100px;
+  margin-top: -55px;
+}
+
+.container .footer h1 {
+  text-transform: uppercase;
+  color: white;
+  font-weight: normal;
+}
+
+.container .footer p {
+  color: lightgray;
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: -15px;
+}
+
+/* Portfolio*/
+.container1 {
+  left: 0px;
+  position: relative;
+  margin-top: 100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 20px;
+      grid-template-areas: "photo1" "photo2" "photo3" "photo4" "photo5" "photo6";
+}
+
+@media screen and (min-width: 768px) {
+  .container1 {
+    margin-top: 100px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    gap: 20px;
+        grid-template-areas: "photo1 photo2" "photo3 photo4" "photo5 photo6";
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container1 {
+    margin-top: 150px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    gap: 20px;
+        grid-template-areas: "photo1 photo2 photo3" "photo4 photo5 photo6";
+  }
+}
+
+.button {
+  display: none;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+          box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #f9f9f9), to(#e9e9e9));
+  background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  cursor: pointer;
+  color: #666666;
+  font-size: 15px;
+  font-weight: normal;
+  width: 100px;
+  height: 30px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+
+.img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.img-container:hover .button {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #e9e9e9), to(#f9f9f9));
+  background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+  background-color: #e9e9e9;
+}
+
+.img-container:active .button {
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+          box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #f9f9f9), to(#e9e9e9));
+  background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  border: 1px solid #505050;
+}
+
+.img-container img {
+  display: relative;
+  opacity: 1;
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.img-container:hover img {
+  opacity: 0.05;
+  -webkit-transition: opacity 0.4s 0s ease;
+  transition: opacity 0.4s 0s ease;
+}
+
+.photo1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: photo1;
+  border-radius: 15px;
+  background-color: #3b3b3b;
+}
+
+.photo2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: photo2;
+  border-radius: 15px;
+  background-color: #3b3b3b;
+}
+
+.photo3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: photo3;
+  border-radius: 15px;
+  background-color: #3b3b3b;
+}
+
+.photo4 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: photo4;
+  border-radius: 15px;
+  background-color: #3b3b3b;
+}
+
+.photo5 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: photo5;
+  border-radius: 15px;
+  background-color: #3b3b3b;
+}
+
+.photo6 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: photo6;
+  border-radius: 15px;
+  background-color: #3b3b3b;
+}
+
+/* Social media*/
+.social-media {
+  padding: 0;
+  right: 0;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.social-media a {
+  color: white;
+}
+
+.social-media a:hover {
+  color: white;
+}
+
+.social-media a:visited {
+  color: white;
+}
+
+.social-media a:active {
+  color: white;
+}
+
+.social-media .blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+  background-color: #e17b77;
+}
+
+.social-media .blog p {
+  width: 0;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.social-media .blog:hover {
+  width: 300px;
+  color: white;
+  padding-left: 15px;
+}
+
+.social-media .blog:hover p {
+  width: 300px;
+  color: white;
+}
+
+.social-media .blog .fa-laptop-code::before {
+  content: "\f5fc";
+}
+
+.social-media .twitter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+  background-color: #00aced;
+}
+
+.social-media .twitter p {
+  width: 0;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.social-media .twitter:hover {
+  width: 300px;
+  color: white;
+  padding-left: 15px;
+}
+
+.social-media .twitter:hover p {
+  width: 300px;
+  color: white;
+}
+
+.social-media .twitter .fa-twitter::before {
+  content: "\f099";
+}
+
+.social-media .facebook {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+  background-color: #3b5998;
+}
+
+.social-media .facebook p {
+  width: 0;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.social-media .facebook:hover {
+  width: 300px;
+  color: white;
+  padding-left: 15px;
+}
+
+.social-media .facebook:hover p {
+  width: 300px;
+  color: white;
+}
+
+.social-media .facebook .fa-facebook-f::before {
+  content: "\f39e";
+}
+
+.social-media .linkedin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+  background-color: #007bb6;
+}
+
+.social-media .linkedin p {
+  width: 0;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.social-media .linkedin:hover {
+  width: 300px;
+  color: white;
+  padding-left: 15px;
+}
+
+.social-media .linkedin:hover p {
+  width: 300px;
+  color: white;
+}
+
+.social-media .linkedin .fa-linkedin-in::before {
+  content: "\f0e1";
+}
+
+.social-media .github {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+  background-color: #333;
+}
+
+.social-media .github p {
+  width: 0;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.social-media .github:hover {
+  padding-left: 15px;
+  width: 300px;
+  color: white;
+}
+
+.social-media .github:hover p {
+  width: 300px;
+  color: white;
+}
+
+.social-media .github .fa-github::before {
+  content: "\f09b";
+}
+/*# sourceMappingURL=styles.css.map */
